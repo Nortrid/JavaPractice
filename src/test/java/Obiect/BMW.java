@@ -52,4 +52,8 @@ public class BMW extends Masina {
             }
         }
     }
+
+    public void pornesteMasina(){
+        System.out.println("Masina BMW pornește din comandă vocală!");
+    }
 }

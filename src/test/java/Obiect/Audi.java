@@ -20,6 +20,19 @@ public class Audi extends Masina{
         System.out.println("Dotarile exterioare sunt " + dotariExterioare);
     }
 
+    //polimorfism static
+    public void afisarePret(){
+        System.out.println(pretFinal);
+    }
+
+    public void afisarePret(Integer reducere){
+        System.out.println("Pret reducere");
+    }
+
+    public void afisarePret(String voucher){
+        System.out.println("Pret voucher");
+    }
+
     public void calculDotari () {
         pretFinal = getPret();
         for (Integer index = 0; index < dotariExterioare.size(); index++){
@@ -35,5 +48,10 @@ public class Audi extends Masina{
                     break;
             }
         }
+    }
+
+    @Override
+    public void pornesteMasina() {
+        System.out.println("Masina Audi porneste de la buton!");
     }
 }

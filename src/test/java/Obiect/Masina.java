@@ -35,6 +35,14 @@ public class Masina {
     //private = restrange vizibilitatea doar in clasa unde este definit
     //ca sa oferim vizibilitate proprietatilor in alte clase apelam la conceptul getter/setter
 
+    //polimorfism = conceptul prin care o metoda poate avea implementare diferita
+    //polimorfismul este de 2 feluri dinamic (override) si static (overload)
+    //polimorfismul dinamic = intr-o ierarhie de clase obtinute prin mostenire o metoda poate avea implementari diferite
+    //polimorfismul dinamic se regaseste tot timpul in procesul de mostenire
+    //polimorfismul static = posibilitatea prin care o metoda cu acelasi nume sa fie implementata de mai multe ori
+    //diferentierea dintre aceste metode s-ar face prin nr sau tipul de parametri
+    //polimorfismul static se poate aplica doar la metodele cu void
+
     public Masina(String marca, String model, String culoare, String carburant, Integer an, Integer capacitateCilindrica) {
         this.marca = marca;
         this.model = model;
@@ -42,7 +50,6 @@ public class Masina {
         this.carburant = carburant;
         this.an = an;
         this.capacitateCilindrica = capacitateCilindrica;
-
     }
 
     public Masina(String marca, String model, String culoare, String carburant, Integer an, Integer capacitateCilindrica, Integer pret) {
@@ -53,6 +60,10 @@ public class Masina {
         this.an = an;
         this.capacitateCilindrica = capacitateCilindrica;
         this.pret = pret;
+    }
+    //definim prima implementare pentru o metoda pe care o vom suprascrie
+    public void pornesteMasina(){
+        System.out.println("Masina porneste de la cheie!");
     }
 
     public void prezentareMasina(){
@@ -70,8 +81,6 @@ public class Masina {
         else {
             System.out.println("Masina nu are pret");
         }
-
-
     }
 
     //daca anul este >= 2023 => 5 lei
@@ -144,7 +153,7 @@ public class Masina {
 }
 
 
-//facem getter/seter
+//facem getter/setter
 
 
 

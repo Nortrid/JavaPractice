@@ -15,15 +15,20 @@ public class ObiectTest {
         AudiA1.setCuloare("Gri");
         AudiA1.prezentareAudi();
         AudiA1.definireImpozit();
+        AudiA1.pornesteMasina();
+        AudiA1.afisarePret();
+        AudiA1.afisarePret(50);
+        AudiA1.afisarePret("Craciun");
         System.out.println();
 
-//        List<String> dotariInterioareBMW = Arrays.asList("Incalzire scaune", "Incalzire volan", "Senzor parcare");
-//        List<String> dotariExterioareBMW = Arrays.asList("Faruri Led", "Oglinzi electrice", "Camera video");
-//        BMW BMW = new BMW("BMW", "X5", "Gri", "diesel", 2000, 2001, 20000, dotariInterioareBMW, dotariExterioareBMW);
-//        BMW.prezentareBMW();
-//        BMW.definireImpozit();
-//        System.out.println();
-//
+        List<String> dotariInterioareBMW = Arrays.asList("Incalzire scaune", "Incalzire volan", "Senzor parcare");
+        List<String> dotariExterioareBMW = Arrays.asList("Faruri Led", "Oglinzi electrice", "Camera video");
+        BMW BMW = new BMW("BMW", "X5", "Gri", "diesel", 2000, 2001, 20000, dotariInterioareBMW, dotariExterioareBMW);
+        BMW.prezentareBMW();
+        BMW.definireImpozit();
+        BMW.pornesteMasina();
+        System.out.println();
+
 //        Masina Toyota = new Masina("Toyota", "Prius", "Verde", "diesel", 2001, 1997, 15000);
 //        Toyota.prezentareMasina();
 //        Toyota.definireImpozit();
