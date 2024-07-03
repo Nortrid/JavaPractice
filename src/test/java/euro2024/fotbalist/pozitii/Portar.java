@@ -2,6 +2,9 @@ package euro2024.fotbalist.pozitii;
 
 import euro2024.fotbalist.Fotbalist;
 import euro2024.fotbalist.interfete.PortarInterface;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
 
 public class Portar extends Fotbalist implements PortarInterface {
     public Portar(String nume, String prenume, Integer varsta, String oras, Double rating, String nationalitate, String pozitieTeren,

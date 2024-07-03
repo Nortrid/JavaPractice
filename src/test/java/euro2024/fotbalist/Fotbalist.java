@@ -3,10 +3,12 @@ package euro2024.fotbalist;
 import euro2024.Persoana;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
+@NoArgsConstructor
 public class Fotbalist extends Persoana {
 
     private String pozitieTeren;

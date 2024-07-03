@@ -2,6 +2,9 @@ package euro2024.fotbalist.pozitii;
 
 import euro2024.fotbalist.Fotbalist;
 import euro2024.fotbalist.interfete.MijlocasInterface;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
 
 public class MijlocasCentral extends Fotbalist implements MijlocasInterface {
     public MijlocasCentral(String nume, String prenume, Integer varsta, String oras, Double rating, String nationalitate,
